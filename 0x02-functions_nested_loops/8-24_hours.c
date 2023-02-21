@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * function that prints the 24hrs of the day
+ * jack_bauer - function that prints the 24hrs of the day
  *
  * Return: always 0
  */
