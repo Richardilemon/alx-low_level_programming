@@ -3,13 +3,12 @@
  * @a: Pointer to the first integer.
  * @b: Pointer to the second integer.
  *
- * Description: This function takes two integer pointers as input, and swaps the values they point to.
  */
 
 void swap_int(int *a, int *b)
 {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
