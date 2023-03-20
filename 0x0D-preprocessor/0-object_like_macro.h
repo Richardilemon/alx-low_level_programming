@@ -1,6 +1,5 @@
 #ifndef MYHEADER_0
 #define MYHEADER_0
-#include <stdio.h>
 
 /**
  * @file myheader.h
