@@ -9,4 +9,4 @@
 
 #define SIZE 1024
 
-#endif /* MYHEADER_0 */
+#endif
