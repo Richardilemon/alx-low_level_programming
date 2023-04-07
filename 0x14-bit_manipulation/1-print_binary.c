@@ -9,24 +9,39 @@
  * Return: void
  */
 void print_binary(unsigned long int n)
+
 {
-        unsigned long int mask = 1;
-        int bit_count = sizeof(unsigned long int) * 8;
-        int i;
 
-        mask = mask << (bit_count - 1);
+        int i, count = 0;
 
-        for (i = 0; i < bit_count; i++)
+        unsigned long int current;
+
+
+        for (i = 63; i >= 0; i--)
+
         {
-                if ((n & mask) == 0)
+
+                current = n >> i;
+
+
+                if (current & 1)
+
                 {
-                        _putchar('0');
-                }
-                else
-                {
+
                         _putchar('1');
+
+                        count++;
+
                 }
 
-                mask = mask >> 1;
+                else if (count)
+
+                        _putchar('0');
+
         }
+
+        if (!count)
+
+                _putchar('0');
+
 }
