@@ -12,7 +12,7 @@ int get_endianness(void)
 	char *endian_ptr = (char *)&num;
 
 	if (*endian_ptr)
-		return (1); /* Little endian */
+		return (1);
 	else
-		return (0); /* Big endian */
+		return (0);
 }
